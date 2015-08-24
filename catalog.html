@@ -59,6 +59,7 @@
             
                 <div class="makers-title">Производители</div>
                 <form action="/echo" method="post">
+                    <!-- Нужно добавить атрибут value для input-->
                     <input type="checkbox" id="id1" checked name="baxter">
                     <label for="id1">baxter of California</label>
                     <br>
@@ -82,6 +83,7 @@
             
             
                 <div class="groups-of-products-title">Группы товаров:</div>
+                <!-- Забыл добавить атрибут name (одинаковые) и value (разные) для input -->
                 
                     <input type="radio" id="gp1">
                     <label for="gp1">Бритвенные принадлежности</label>
@@ -100,8 +102,10 @@
         <div class="products-gallery">
             <article class="product1">
                 <img src="http://placehold.it/220x165" width="220" height="165" alt="Набор для путешествий &#171;Baxter of California&#171;">
+                <!--Это ведь загловок продукта, а не просто текст?-->
                 <p>Набор для путешествий &#171;Baxter of California&#187;</p>
                 <div class="price">
+                    <!--p - это логически законченный кусок текста. Тут span-->
                     <p>2 900 РУБ.</p>
                 </div>
                 <div class="buy">
