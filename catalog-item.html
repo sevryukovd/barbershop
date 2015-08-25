@@ -41,7 +41,7 @@
     <div class="container">
         <h1>Набор для путешествий &#171;Baxter of California&#187;</h1>
         <!--Хорошее название class="breadcrumbs". Это не шутка, а реально кстоявшееся название для этой части сайта-->
-        <nav class="second-navigator">
+        <nav class="breadcrumbs">
             <ul>
                 <li>
                     <a href="#">Главная</a>
@@ -57,7 +57,7 @@
                 </li>
             </ul>
 
-        </nav>
+        </breadcrumbs>
         <section class="product-photo">
             <figure>
                 <img src="http://placehold.it/460x498" width="460" height="498" alt="">
@@ -70,13 +70,13 @@
 
         <section class="product-description">
             <!--2 span, а не 2 div Это всего-лишь маленький кусочек текста, а не целый блочный элемент-->
-            <div class="existence">Есть в наличии</div>
-            <div class="articul">Аpтикул:dexter-ae</div>
+            <span class="existence">Есть в наличии</span>
+            <span class="articul">Аpтикул:dexter-ae</span>
 
             <p>TRAVEL KIT - необходимый аксессуар во вретмя любого путешествия. в аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
         </section>
 
-        <div class="price">2 900 РУБ</div>
+        <span class="price">2 900 РУБ</span>
         <div class="buy">
             <a href="#" class="btn">Купить</a>
         </div>
@@ -97,13 +97,14 @@
 
     <footer class="main-footer">
         <div class="container-clearfix">
-            <section class="footer-contacts">
+            <div class="footer-contacts">
                 Барбершоп «Бородинский»
                 <br>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
                 <br>
                 <a href="#">Как нас найти?</a>
-                <br> телефон: +7 (495) 666-02-66
-            </section>
+                <br> 
+                <a href ="tel:84956660266">телефон: +7 (495) 666-02-66</a>
+            </div>
             <section class="footer-social">
                 <p>Давайте дружить!</p>
                 <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
