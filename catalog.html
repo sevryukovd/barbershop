@@ -57,54 +57,54 @@
 
         </nav>
         <div class="filter">
-            
+            <form action="/echo" method="post">
                 <div class="makers-title">Производители</div>
-                <form action="/echo" method="post">
-                    <!-- Нужно добавить атрибут value для input-->
-                    <input type="checkbox" id="id1" name="baxter" value="yes" checked>
-                    <label for="id1">baxter of California</label>
-                    <br>
-                    <input type="checkbox" id="id2" name="mrnatty" value="no">
-                    <label for="id2">MR Natty</label>
-                    <br>
-                    <input type="checkbox" id="id3" checked name="suavecito" value="no">
-                    <label for="id3">Suavecito</label>
-                    <br>
-                    <input type="checkbox" id="id4" name="malin-goetz" value="no">
-                    <label for="id4">Malin+goetz</label>
-                    <br>
-                    <input type="checkbox" id="id5" name="murrays" value="no">
-                    <label for="id5">Murray's</label>
-                    <br>
-                    <input type="checkbox" id="id6" name="amercrew" value="no" checked>
-                    <label for="id6">American crew</label>
-                    <br>
-                    <br>
-                
-            
-            
+
+                <!-- Нужно добавить атрибут value для input-->
+                <input type="checkbox" id="id1" name="baxter" value="yes" checked>
+                <label for="id1">baxter of California</label>
+                <br>
+                <input type="checkbox" id="id2" name="mrnatty" value="no">
+                <label for="id2">MR Natty</label>
+                <br>
+                <input type="checkbox" id="id3" checked name="suavecito" value="no">
+                <label for="id3">Suavecito</label>
+                <br>
+                <input type="checkbox" id="id4" name="malin-goetz" value="no">
+                <label for="id4">Malin+goetz</label>
+                <br>
+                <input type="checkbox" id="id5" name="murrays" value="no">
+                <label for="id5">Murray's</label>
+                <br>
+                <input type="checkbox" id="id6" name="amercrew" value="no" checked>
+                <label for="id6">American crew</label>
+                <br>
+                <br>
+
+
+
                 <div class="groups-of-products-title">Группы товаров:</div>
                 <!-- Забыл добавить атрибут name (одинаковые) и value (разные) для input -->
-                
-                    <input type="radio" id="gp1" name="groups-of-products" value="shaving">
-                    <label for="gp1">Бритвенные принадлежности</label>
-                    <br>
-                    <input type="radio" id="gp2" name="groups-of-products" value="care" checked>
-                    <label for="gp2">Средства для ухода</label>
-                    <br>
-                    <input type="radio" id="gp3" name="groups-of-products" value="accessories">
-                    <label for="gp3">Аксессуары</label>
-                    <br>
-                    <input type="submit" value="Показать">
-                </form>
-            
-            
+
+                <input type="radio" id="gp1" name="groups-of-products" value="shaving">
+                <label for="gp1">Бритвенные принадлежности</label>
+                <br>
+                <input type="radio" id="gp2" name="groups-of-products" value="care" checked>
+                <label for="gp2">Средства для ухода</label>
+                <br>
+                <input type="radio" id="gp3" name="groups-of-products" value="accessories">
+                <label for="gp3">Аксессуары</label>
+                <br>
+                <input type="submit" value="Показать">
+            </form>
+
+
         </div>
         <div class="products-gallery">
             <div class="product1">
                 <img src="img/Baxter-cal-set1.jpg" width="220" height="165" alt="Набор для путешествий &#171;Baxter of California&#171;">
                 <!--Это ведь загловок продукта, а не просто текст?-->
-                <div class="products-title">Набор для путешествий &#171;Baxter of California&#187;</div>
+                <h2 class="products-title">Набор для путешествий &#171;Baxter of California&#187;</h2>
                 <div class="price">
                     <!--p - это логически законченный кусок текста. Тут span-->
                     <span>2 900 РУБ.</span>
@@ -117,7 +117,7 @@
 
             <div class="product2">
                 <img src="img/Baxter-cal-cond.jpg" width="220" height="165" alt="Увлажняющий кондиционер &#171;Baxter of California&#187;">
-                <div class="products-title">Увлажняющий кондиционер &#171;Baxter of California&#187;</div>
+                <h2 class="products-title">Увлажняющий кондиционер &#171;Baxter of California&#187;</h2>
                 <div class="price">
                     <span>750 РУБ.</span>
                 </div>
@@ -129,7 +129,7 @@
 
             <div class="product3">
                 <img src="img/Suavecito-gel.jpg" width="220" height="165" alt="Гель для волос &#171; Suavecito&#187;">
-                <div class="products-title">Гель для волос &#171;Suavecito&#187;</div>
+                <h2 class="products-title">Гель для волос &#171;Suavecito&#187;</h2>
                 <div class="price">
                     <span>290 РУБ.</span>
                 </div>
@@ -141,7 +141,7 @@
 
             <div class="product4">
                 <img src="img/Acrew.jpg" width="220" height="165" alt="Глина для укладки волос &#171; AMERICAN CREW&#187;">
-                <div class="products-title">Глина для укладки волос &#171;American crew&#187;</div>
+                <h2 class="products-title">Глина для укладки волос &#171;American crew&#187;</h2>
                 <div class="price">
                     <span>500 РУБ.</span>
                 </div>
@@ -153,7 +153,7 @@
 
             <div class="product5">
                 <img src="img/Acrew-gel.jpg" width="220" height="165" alt="Гель для волос &#171; Baxter of California &#187;">
-                <div class="products-title">Гель для волос &#171;American crew&#187;</div>
+                <h2 class="products-title">Гель для волос &#171;American crew&#187;</h2>
                 <div class="price">
                     <span>300 РУБ.</span>
                 </div>
@@ -165,7 +165,7 @@
 
             <div class="product6">
                 <img src="img/Baxter-cal-set2.jpg" width="220" height="165" alt="Набор для бритья &#171; Baxter of California &#187;">
-                <div class="products-title">Набор для бритья &#171;Baxter of california&#187;</div>
+                <h2 class="products-title">Набор для бритья &#171;Baxter of california&#187;</h2>
                 <div class="price">
                     <span>3 900 РУБ.</span>
                 </div>
@@ -194,7 +194,7 @@
                 <br>
                 <a href="#">Как нас найти?</a>
                 <br>
-                 <a href ="tel:84956660266">телефон: +7 (495) 666-02-66</a>
+                <a href="tel:84956660266">телефон: +7 (495) 666-02-66</a>
             </div>
             <div class="footer-social">
                 <p>Давайте дружить!</p>
