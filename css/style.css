@@ -31,13 +31,14 @@ body {
 .main-navigation {
     float: left;
     width: 640px;
-    /* для оформления схемы */
 }
-
+.main-navigation li{
+    display: inline-block;
+    margin-right: 20px;
+}
 .user-block {
     float: right;
     width: 90px;
-    /* для оформления схемы */
 }
 
 .main-container {
