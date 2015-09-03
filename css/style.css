@@ -32,10 +32,12 @@ body {
     float: left;
     width: 640px;
 }
-.main-navigation li{
+
+.main-navigation li {
     display: inline-block;
     margin-right: 20px;
 }
+
 .user-block {
     float: right;
     width: 90px;
@@ -99,30 +101,65 @@ body {
 
 .footer-contacts {
     float: left;
-  width: 310px;
+    width: 310px;
     margin-right: 90px;
-
 }
 
 .footer-social {
     float: left;
-  width: 140px;
-
+    width: 140px;
 }
+
 .footer-copyright {
     float: right;
-  width: 220px;
+    width: 220px;
 }
 
 .breadcrumbs {
     margin-bottom: 50px;
 }
 
-.filter {
-    width: 170px;
-    float: left;
+.breadcrumbs li {
+    display: inline-block;
+    margin-right: 20px;
 }
+
+.filter {
+    float: left;
+    width: 170px;
+    min-height: 570px;
+}
+
 .products-gallery {
-    width: 700px;
-    margin-left: 240px
-}.
+    float: right;
+    width: 706px;
+    margin-bottom: 40px;
+}
+
+.products-gallery .product {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    margin-right: 20px;
+}
+
+.product:nth-child(3n) {
+    margin-right: 0;
+}
+
+.product-title {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: none;
+}
+
+.pagination {
+    width: 150px;
+}
+.pagination a{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 25px;
+    margin-right: 10px;
+}
