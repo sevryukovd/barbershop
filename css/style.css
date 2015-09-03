@@ -163,3 +163,28 @@ body {
     width: 25px;
     margin-right: 10px;
 }
+.product-photo{
+    float: left;
+    width: 460px;
+    
+}
+.product-photo img:nth-child(n+2){
+    margin-top: 20px;
+    margin-right: 17px;
+}
+.product-photo img:last-child{
+    margin-right: 0;
+}
+.product-description {
+    float: right;
+    width: 390px;
+}
+.product-characteristics{
+    float: right;
+    width: 240px;
+    margin-top: 50px;
+    margin-right: 150px;
+}
+.existence{
+    margin-right: 180px
+}
