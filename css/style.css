@@ -1,14 +1,22 @@
 * {
-    outline: 1px solid black;
+    outline: 1px solid green;
 }
 
 body {
     font-size: 14px;
     line-height: 24px;
-    color: #000000;
-    font-weight: bold;
-    font-family: PT Sans Narrow;
+    font-family: PT Sans Narrow, Arial, sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
+    color: #fff;
+    min-width: 960px;
+    background: #111 no-repeat center top;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .clearfix:after {
@@ -18,29 +26,87 @@ body {
 }
 
 .main-header {
-    font-size: 16px;
-    line-height: normal;
-    padding: 10px 0;
-}
-
-.container {
-    width: 960px;
-    margin: 0 auto;
+    margin-bottom: 60px;
+    background: #000;
 }
 
 .main-navigation {
     float: left;
-    width: 640px;
+    width: 780px;
+}
+
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    list-style: none;
 }
 
 .main-navigation li {
     display: inline-block;
-    margin-right: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: top;
 }
 
-.user-block {
-    float: right;
-    width: 90px;
+.main-navigation a {
+    display: block;
+    padding: 25px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-navigation a:hover {
+    background: #242424;
+}
+
+.main-navigation .active a {
+    position: relative;
+}
+
+.main-navigation .active a:hover {
+    background: none;
+}
+
+.main-navigation .active a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 5px;
+    background: white;
+}
+
+.login {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 25px 20px;
+    padding-left: 50px;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.login:hover {
+    background: #242424;
+}
+
+.login:before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    width: 18px;
+    height: 18px;
+    background: transparent url("../img/icon-login.png") no-repeat;
+    opacity: .5;
+}
+
+.login:hover:before {
+    opacity: 1;
 }
 
 .main-container {
@@ -59,17 +125,23 @@ body {
 
 .logo {
     width: 368px;
+    height: 204px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+}
+
+.logo img {
+    width: 368px;
+    height: 204px;
 }
 
 .features-row {
-    margin-bottom: 35px;
+    margin-bottom: 80px;
 }
 
 .features-item {
-    width: 300px;
     float: left;
+    width: 300px;
     margin-right: 20px;
 }
 
@@ -156,35 +228,41 @@ body {
 .pagination {
     width: 150px;
 }
-.pagination a{
+
+.pagination a {
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 25px;
     margin-right: 10px;
 }
-.product-photo{
+
+.product-photo {
     float: left;
     width: 460px;
-    
 }
-.product-photo img:nth-child(n+2){
+
+.product-photo img:nth-child(n+2) {
     margin-top: 20px;
     margin-right: 17px;
 }
-.product-photo img:last-child{
+
+.product-photo img:last-child {
     margin-right: 0;
 }
+
 .product-description {
     float: right;
     width: 390px;
 }
-.product-characteristics{
+
+.product-characteristics {
     float: right;
     width: 240px;
     margin-top: 50px;
     margin-right: 150px;
 }
-.existence{
+
+.existence {
     margin-right: 180px
 }
