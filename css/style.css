@@ -113,11 +113,6 @@ body {
     margin: 30px auto;
 }
 
-.features-title {
-    font-size: 30px;
-    line-height: normal;
-}
-
 .content-column-title {
     font-size: 30px;
     line-height: normal;
@@ -143,10 +138,36 @@ body {
     float: left;
     width: 300px;
     margin-right: 20px;
+    text-align: center;
 }
 
 .features-item:last-child {
     margin-right: 0;
+}
+
+.features-title {
+    position: relative;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.features-item p {
+    margin: 10px;
+}
+
+.features-title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+     margin-left: -10px;
+    background: #fff;
+    transform: rotate(45deg);
 }
 
 .index-content {
