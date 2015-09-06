@@ -35,6 +35,11 @@ body {
     width: 780px;
 }
 
+.user-block {
+    float: right;
+    max-width: 140px;
+}
+
 .main-navigation ul {
     margin: 0;
     padding: 0;
@@ -113,11 +118,6 @@ body {
     margin: 30px auto;
 }
 
-.content-column-title {
-    font-size: 30px;
-    line-height: normal;
-}
-
 .logo {
     width: 368px;
     height: 204px;
@@ -165,14 +165,16 @@ body {
     display: block;
     width: 20px;
     height: 20px;
-     margin-left: -10px;
+    margin-left: -10px;
     background: #fff;
     transform: rotate(45deg);
 }
 
 .index-content {
-    margin-bottom: 20px;
-    padding: 30px 30px;
+    margin-bottom: 35px;
+    padding: 50px 50px;
+    color: #000;
+    background: url("../img/index-content-shadow.png") no-repeat center, #f8f5f2 url("../img/pattern-white.jpg");
 }
 
 .content-column-left,
@@ -186,6 +188,104 @@ body {
 
 .content-column-right {
     float: right;
+}
+
+.content-column-title {
+    margin: 0;
+    margin-bottom: 35px;
+    font-size: 30px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.news-preview {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.news-preview li {
+    margin-bottom: 25px;
+}
+
+.news-preview time {
+    text-transform: none;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 33px;
+    margin-right: 16px;
+    font-size: 14px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+    background: #663d15;
+}
+
+.btn:disabled {
+    cursor: default;
+    opacity: .5;
+}
+
+.btn:disabled:hover {
+    background: #000;
+}
+
+.gallery {
+    position: relative;
+    height: 260px;
+}
+
+.gallery-content {
+    height: 164px;
+    margin: 0;
+    border: 7px solid white;
+    background: #ccc;
+}
+
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.gallery .btn {
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    margin: 0;
+}
+
+.gallery-prev {
+    left: 0;
+}
+
+.gallery-next {
+    right: 0;
+}
+
+.index-content p {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.appointment-form input {
+    width: 106px;
+    padding: 10px 15px;
+    border: 2px solid #000;
 }
 
 .main-footer {
