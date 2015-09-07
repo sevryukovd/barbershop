@@ -1,6 +1,4 @@
-* {
-    outline: 1px solid green;
-}
+
 
 body {
     font-size: 14px;
@@ -123,7 +121,7 @@ body {
     width: 368px;
     height: 204px;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
 }
 
 .logo img {
@@ -138,6 +136,7 @@ body {
 .features-item {
     float: left;
     width: 300px;
+    margin-top: 0;
     margin-right: 20px;
     text-align: center;
 }
